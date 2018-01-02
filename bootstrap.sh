@@ -27,8 +27,6 @@ dnf -y install \
     i3 \
     lightdm \
     lightdm-gtk \
-    pulseaudio \
-    pulseaudio-utils \
     gnome-terminal \
     bash-completion \
     NetworkManager-wifi \
