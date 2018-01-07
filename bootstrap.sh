@@ -18,25 +18,58 @@ dnf -y install \
     xorg-x11-server-Xorg \
     xorg-x11-utils \
     xorg-x11-xauth \
-    xorg-x11-xinit
+    xorg-x11-xinit \
+    xbacklight \
+    xscreensaver \
+    xcompmgr \
+    xrandr \
+    arandr \
+    xsel \
+    xclip \
+    xkill
+
+# Wireless drivers (the 7260 package contains firmwares for many other Intel cards too)
+dnf -y install \
+    iwl7260-firmware \
+    linux-firmware
 
 # Desktop
 dnf -y install \
     adwaita-gtk2-theme \
     adwaita-icon-theme \
     i3 \
+    i3lock \
+    dmenu \
+    xautolock \
+    x11-ssh-askpass \
     lightdm \
     lightdm-gtk \
+    dzen2 \
+    libappindicator \
+    notification-daemon \
+    xfce4-screenshooter \
+    firefox
+
+# System tools
+dnf -y install \
+    udiskie \
+    upower \
+    xdg-utils \
+    lm_sensors \
+    xsensors \
+    dbus-x11 \
     gnome-terminal \
     bash-completion \
+    gnome-disk-utility \
+    NetworkManager-tui \
     NetworkManager-wifi \
-    iwl7260-firmware \
-    firefox \
     git \
+    tmux \
     vim
 
 # Fonts
 dnf -y install \
+    fontconfig \
     dejavu-sans-fonts \
     dejavu-sans-mono-fonts \
     dejavu-serif-fonts \
@@ -66,13 +99,10 @@ dnf -y install \
     pulseaudio-libs \
     pulseaudio-utils \
     alsa-plugins-pulseaudio \
+    alsa-utils \
     pavucontrol
 
-# Power
-dnf -y install \
-    upower
-
-# Set graphical target
+# Set graphical target and enable lightdm at boot
 systemctl enable lightdm.service
 systemctl set-default graphical.target
 sync
