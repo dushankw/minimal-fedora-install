@@ -48,7 +48,8 @@ dnf -y install \
     libappindicator \
     notification-daemon \
     xfce4-screenshooter \
-    firefox
+    firefox \
+    feh
 
 # System tools
 dnf -y install \
