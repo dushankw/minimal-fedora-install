@@ -60,6 +60,7 @@ dnf -y install \
     xsensors \
     dbus-x11 \
     gnome-terminal \
+    gnome-logs \
     bash-completion \
     gnome-disk-utility \
     NetworkManager-tui \
