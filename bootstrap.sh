@@ -103,7 +103,8 @@ dnf -y install \
     pulseaudio-utils \
     alsa-plugins-pulseaudio \
     alsa-utils \
-    pavucontrol
+    pavucontrol \
+    volumeicon
 
 # Set graphical target and enable lightdm at boot
 systemctl enable lightdm.service
