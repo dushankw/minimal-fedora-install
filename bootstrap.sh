@@ -66,6 +66,7 @@ dnf -y install \
     gnome-disk-utility \
     NetworkManager-tui \
     NetworkManager-wifi \
+    net-tools \
     git \
     tmux \
     vim
