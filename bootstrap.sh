@@ -67,9 +67,13 @@ dnf -y install \
     NetworkManager-tui \
     NetworkManager-wifi \
     net-tools \
+    bind-utils \
     git \
     tmux \
-    vim
+    vim \
+    whois \
+    traceroute \
+    unzip
 
 # Fonts
 dnf -y install \
