@@ -73,7 +73,8 @@ dnf -y install \
     vim \
     whois \
     traceroute \
-    unzip
+    unzip \
+    eog
 
 # Fonts
 dnf -y install \
