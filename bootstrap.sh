@@ -74,7 +74,8 @@ dnf -y install \
     whois \
     traceroute \
     unzip \
-    eog
+    eog \
+    tree
 
 # Fonts
 dnf -y install \
