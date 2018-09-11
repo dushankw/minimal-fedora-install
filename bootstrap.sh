@@ -21,7 +21,6 @@ dnf -y install \
     xorg-x11-xauth \
     xorg-x11-xinit \
     xbacklight \
-    xscreensaver \
     xcompmgr \
     xrandr \
     arandr \
