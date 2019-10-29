@@ -5,8 +5,8 @@ Bootstrap a minimal i3 Linux desktop using Fedora on a modern laptop with Intel 
 ### Usage
 
 0. Using the `netinstall` ISO do a `Minimal Install` of the OS
-1. Install the relevant `rpmfusion` packages (vendored in for your convenience)
-2. Run `bootstrap.sh` as root
-3. On reboot you will have a minimal i3 desktop
+1. Run `bootstrap.sh` as root (machine will reboot at the end)
+
+You should now have a functional desktop
 
 At this point you may run any other provisioning scripts you have written
