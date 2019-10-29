@@ -4,6 +4,9 @@ set -euo pipefail
 # Only root can run this script
 [ $UID -eq 0 ] || exit 1
 
+# Ensure the system is up to date
+dnf update -y --refresh
+
 # X server and drivers
 dnf -y install \
     glx-utils \
@@ -67,6 +70,7 @@ dnf -y install \
     NetworkManager-wifi \
     net-tools \
     bind-utils \
+    blivet-gui \
     git \
     tmux \
     vim \
@@ -74,7 +78,8 @@ dnf -y install \
     traceroute \
     unzip \
     eog \
-    tree
+    tree \
+    htop
 
 # Fonts
 dnf -y install \
@@ -115,5 +120,7 @@ dnf -y install \
 # Set graphical target and enable lightdm at boot
 systemctl enable lightdm.service
 systemctl set-default graphical.target
+
+# Boot into the new environment
 sync
 reboot
