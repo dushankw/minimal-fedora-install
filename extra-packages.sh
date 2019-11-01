@@ -16,9 +16,7 @@ sudo dnf install \
     elfutils \
     eog \
     evince \
-    exfat-utils \
     figlet \
-    fuse-exfat \
     gcc \
     gdb \
     geteltorito \
@@ -86,14 +84,19 @@ sudo dnf install \
     thunar \
     tmux \
     tree \
-    unrar \
     usbutils \
     uuid \
     valgrind \
     wget \
     wireshark \
-    wireshark-gtk \
     words \
     xar \
     yubikey-manager \
     yubikey-personalization-gui
+
+# The following are also good, but come from rpmfusion, install it if you want them
+# https://rpmfusion.org/Configuration (be sure to verify GPG signatures)
+# exfat-utils
+# fuse-exfat
+# unrar
+# wireshark-gtk
