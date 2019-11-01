@@ -10,3 +10,7 @@ Bootstrap a minimal i3 Linux desktop using Fedora on a modern laptop with Intel 
 You should now have a functional desktop
 
 At this point you may run any other provisioning scripts you have written
+
+### Extras
+
+There is an optional `extra-packages.sh` script that includes a number of additional tools I find useful
