@@ -79,7 +79,8 @@ dnf -y install \
     unzip \
     eog \
     tree \
-    htop
+    htop \
+    fzf
 
 # Fonts
 dnf -y install \
