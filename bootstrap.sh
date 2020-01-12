@@ -80,7 +80,8 @@ dnf -y install \
     eog \
     tree \
     htop \
-    fzf
+    fzf \
+    rsync
 
 # Fonts
 dnf -y install \
