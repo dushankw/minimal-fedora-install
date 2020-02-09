@@ -147,7 +147,7 @@ skip_if_unavailable=True
 EOF
 
 # Install h264 and a light weight media player
-dnf -y install \
+dnf -y install --refresh \
     gstreamer1-plugin-openh264 \
     parole
 
