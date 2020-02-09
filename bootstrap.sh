@@ -52,7 +52,8 @@ dnf -y install \
     notification-daemon \
     xfce4-screenshooter \
     firefox \
-    feh
+    feh \
+    thunar
 
 # System tools
 dnf -y install \
@@ -118,6 +119,37 @@ dnf -y install \
     alsa-utils \
     pavucontrol \
     volumeicon
+
+# Enable the upstream open h264 repo (exists as of Fedora 31)
+umask 077
+cat <<EOF > /etc/yum.repos.d/fedora-cisco-openh264.repo
+name=Fedora $releasever openh264 (From Cisco) - $basearch
+baseurl=https://codecs.fedoraproject.org/openh264/$releasever/$basearch/
+type=rpm
+enabled=1
+enabled_metadata=1
+metadata_expire=14d
+repo_gpgcheck=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch
+skip_if_unavailable=True
+
+[fedora-cisco-openh264-debuginfo]
+name=Fedora $releasever openh264 (From Cisco) - $basearch - Debug
+baseurl=https://codecs.fedoraproject.org/openh264/$releasever/$basearch/debug/
+type=rpm
+enabled=0
+metadata_expire=28d
+repo_gpgcheck=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch
+skip_if_unavailable=True
+EOF
+
+# Install h264 and a light weight media player
+dnf -y install \
+    gstreamer1-plugin-openh264 \
+    parole
 
 # Set graphical target and enable lightdm at boot
 systemctl enable lightdm.service
