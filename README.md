@@ -2,6 +2,8 @@
 
 Bootstrap a minimal i3 Linux desktop using Fedora on a modern laptop with Intel hardware (CPU/GPU/Wireless)
 
+This script is written to be used with the latest Fedora and is not maintained to be backwards compatible with older ones
+
 ### Usage
 
 0. Using the `netinstall` ISO do a `Minimal Install` of the OS (I suggest enabling `LUKS + LVM` and creating separate partitions for `/boot`, `/`, `/home`, `/var` and `swap`)
