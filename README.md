@@ -2,7 +2,7 @@
 
 Bootstrap a minimal i3 Linux desktop using Fedora on a modern laptop with Intel hardware (CPU/GPU/Wireless)
 
-This script is written to be used with the latest Fedora and is not maintained to be backwards compatible with older ones
+This script is written to be used with the latest Fedora (at any given time) and is not maintained to be backwards compatible with older ones
 
 ### Usage
 
