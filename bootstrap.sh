@@ -82,7 +82,8 @@ dnf -y install \
     tree \
     htop \
     fzf \
-    rsync
+    rsync \
+    colordiff
 
 # Fonts
 dnf -y install \
