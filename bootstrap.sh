@@ -45,6 +45,7 @@ dnf -y install \
     dmenu \
     xautolock \
     x11-ssh-askpass \
+    openssh-askpass \
     lightdm \
     lightdm-gtk \
     dzen2 \
