@@ -73,6 +73,7 @@ dnf -y install \
     NetworkManager-wifi \
     network-manager-applet \
     net-tools \
+    wireless-tools \
     bind-utils \
     blivet-gui \
     git \
