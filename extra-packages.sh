@@ -93,7 +93,6 @@ sudo dnf install \
     xar \
     yubikey-manager \
     yubikey-personalization-gui \
-    redshift \
     zbar
 
 # The following are also good, but come from rpmfusion, install it if you want them
