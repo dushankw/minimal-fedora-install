@@ -70,6 +70,7 @@ dnf -y install \
     gnome-disk-utility \
     NetworkManager-tui \
     NetworkManager-wifi \
+    network-manager-applet \
     net-tools \
     bind-utils \
     blivet-gui \
