@@ -87,7 +87,8 @@ dnf -y install \
     htop \
     fzf \
     rsync \
-    colordiff
+    colordiff \
+    mtr
 
 # Fonts
 dnf -y install \
