@@ -88,7 +88,8 @@ dnf -y install \
     fzf \
     rsync \
     colordiff \
-    mtr
+    mtr \
+    psmisc
 
 # Fonts
 dnf -y install \
