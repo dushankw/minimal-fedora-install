@@ -90,7 +90,8 @@ dnf -y install \
     colordiff \
     mtr \
     psmisc \
-    words
+    words \
+    ranger
 
 # Fonts
 dnf -y install \
