@@ -77,6 +77,7 @@ dnf -y install \
     bind-utils \
     blivet-gui \
     git \
+    git-gui \
     tmux \
     vim \
     whois \
