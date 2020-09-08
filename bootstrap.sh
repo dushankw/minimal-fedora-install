@@ -92,7 +92,8 @@ dnf -y install \
     mtr \
     psmisc \
     words \
-    ranger
+    ranger \
+    smem
 
 # Fonts
 dnf -y install \
