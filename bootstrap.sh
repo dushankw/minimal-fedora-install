@@ -147,6 +147,7 @@ systemctl enable lightdm.service
 systemctl set-default graphical.target
 
 # Disable sshd since the system is not yet hardened
+# shellcheck disable=SC2216
 systemctl disable sshd | true
 
 # Boot into the new environment
