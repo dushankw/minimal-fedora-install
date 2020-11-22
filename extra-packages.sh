@@ -54,6 +54,7 @@ sudo dnf install \
     p7zip \
     pcsc-tools \
     perl-Image-ExifTool \
+    poppler-utils \
     psmisc \
     pwgen \
     pylint \
