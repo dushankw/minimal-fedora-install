@@ -93,7 +93,8 @@ dnf -y install \
     smem \
     firejail \
     keepassx \
-    dnf-utils
+    dnf-utils \
+    pesign
 
 # Fonts
 dnf -y install \
