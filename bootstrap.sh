@@ -140,7 +140,8 @@ dnf -y install \
 
 # ZRAM for Swap
 dnf -y install \
-    zram-generator zram-generator-defaults
+    zram-generator \
+    zram-generator-defaults
 
 # Set graphical target and enable lightdm at boot
 systemctl enable lightdm.service
